@@ -37,12 +37,17 @@ function AdminSignIn() {
               className="w-full px-3 py-2 border border-gray-300 rounded-md"
             />
           </div>
+          <Link to="/admindashboard">
           <button
             type="submit"
             className="w-full py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
           >
+            
+
+            
             Sign In
           </button>
+          </Link>
           <div className="mt-4 text-center">
             <button
               type="button"

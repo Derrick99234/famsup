@@ -2,9 +2,11 @@ import { useState, useEffect } from "react"
 import { Routes, Route, useLocation } from "react-router-dom";
 import LoadingScreen from "../components/Preloader/LoadingScreen";
 import AdminSignIn from "../pages/Admin/Signin";
+import Dashboard from "../pages/Admin/Dashboard";
 import Home from "../pages/Home/Home";
 import SignUp from "../pages/Join/Signup";
 import SignIn from "../pages/Join/Signin";
+import UserDashboard from "../pages/Dashboard/UserDashboard";
 
 const FolderRoute = () => {
   const [loading, setLoading] = useState(false);
@@ -28,8 +30,10 @@ const FolderRoute = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/adminsignin" element={<AdminSignIn />} />
+        <Route path="/admindashboard" element={<Dashboard />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
+        <Route path="/userdashboard" element={<UserDashboard />} />
       </Routes>
     </div>
   );
