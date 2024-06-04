@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import axiosInstance from "../../utils/axiosInstance";
-
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setpassword] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -17,7 +17,7 @@ function SignIn() {
 
       if (res.data && res.data.accessToken) {
         localStorage.setItem("accessToken", res.data.accessToken);
-        alert(res.data.message);
+        navigate("/");
       }
     } catch (e) {
       console.log(e);

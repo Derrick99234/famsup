@@ -1,11 +1,29 @@
-import { Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react"
+import { Routes, Route, useLocation } from "react-router-dom";
+import LoadingScreen from "../components/Preloader/LoadingScreen";
 import Home from "../pages/Home/Home";
 import SignUp from "../pages/Join/Signup";
 import SignIn from "../pages/Join/Signin";
 
 const FolderRoute = () => {
+  const [loading, setLoading] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    const handleStart = () => setLoading(true);
+    const handleComplete = () => setLoading(false);
+
+    handleStart();
+    setTimeout(() => {
+      handleComplete();
+    }, 1000); 
+
+    return () => handleComplete();
+  }, [location]);
+
   return (
     <div>
+      {loading && <LoadingScreen />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<SignUp />} />
