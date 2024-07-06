@@ -5,7 +5,7 @@ function Landing() {
   return (
     <Button
     text="Trying"
-    className="text-white px-[40px] py"
+    className="text-white"
     />
   )
 }

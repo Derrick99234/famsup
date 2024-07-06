@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axiosInstance from "../../utils/axiosInstance";
+import Button from "../../components/Button/Button";
 
 function SignUp() {
   const [name, setName] = useState("");
@@ -69,12 +70,11 @@ function SignUp() {
                 className="w-full px-3 py-2 border border-gray-300 rounded-md"
               />
             </div>
-            <button
+            <Button 
               type="submit"
-              className="w-full py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
-            >
-              Sign Up
-            </button>
+              className="w-full text-white rounded-md hover:bg-[#8e44ad]"
+              text="Sign Up"
+            />
             <div className="mt-4 text-center">
               <button
                 type="button"

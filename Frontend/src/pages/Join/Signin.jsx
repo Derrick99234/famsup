@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axiosInstance from "../../utils/axiosInstance";
 import { Link, useNavigate } from "react-router-dom";
+import Button from "../../components/Button/Button";
 function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setpassword] = useState("");
@@ -57,12 +58,12 @@ function SignIn() {
                 className="w-full px-3 py-2 border border-gray-300 rounded-md"
               />
             </div>
-            <button
+            <Button 
               type="submit"
-              className="w-full py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
-            >
-              Sign In
-            </button>
+              className="w-full text-white rounded-md hover:bg-[#8e44ad]"
+              text="Sign In"
+            />
+            
             <div className="mt-4 text-center">
               <button
                 type="button"
