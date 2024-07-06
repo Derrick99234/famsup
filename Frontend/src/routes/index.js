@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import LoadingScreen from "../components/Preloader/LoadingScreen";
 import AdminSignIn from "../pages/Admin/Signin";
 import Dashboard from "../pages/Admin/Dashboard";
+import Landing from "../pages/Landing/Landing";
 import Home from "../pages/Home/Home";
 import SignUp from "../pages/Join/Signup";
 import SignIn from "../pages/Join/Signin";
@@ -28,7 +29,8 @@ const FolderRoute = () => {
     <div>
       {loading && <LoadingScreen />}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Landing />} />
+        <Route path="/Home" element={<Home />} />
         <Route path="/adminsignin" element={<AdminSignIn />} />
         <Route path="/admindashboard" element={<Dashboard />} />
         <Route path="/signup" element={<SignUp />} />
