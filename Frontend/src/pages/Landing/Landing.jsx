@@ -1,8 +1,12 @@
 import React from 'react'
+import Button from '../../components/Button/Button'
 
 function Landing() {
   return (
-    <div>Landing</div>
+    <Button
+    text="Trying"
+    className="text-white px-[40px] py"
+    />
   )
 }
 
