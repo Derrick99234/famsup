@@ -60,7 +60,7 @@ function SignIn() {
             </div>
             <Button 
               type="submit"
-              className="w-full text-white rounded-md hover:bg-[#8e44ad]"
+              className="w-full text-white px-[40px] py-[5px] rounded-md"
               text="Sign In"
             />
             

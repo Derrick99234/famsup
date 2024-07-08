@@ -72,7 +72,7 @@ function SignUp() {
             </div>
             <Button 
               type="submit"
-              className="w-full text-white rounded-md hover:bg-[#8e44ad]"
+              className="w-full text-white rounded-md px-[40px] py-[5px]"
               text="Sign Up"
             />
             <div className="mt-4 text-center">
