@@ -1,6 +1,6 @@
 import { MoreVertical, ChevronLast, ChevronFirst } from "lucide-react";
 import { useContext, createContext, useState } from "react";
-import Navbar from "../Dashboard/NavBar";
+// import NavBar from "../Dashboard/NavBar";
 
 const SidebarContext = createContext();
 
@@ -9,6 +9,9 @@ export default function Sidebar({ children }) {
 
   return (
     <>
+    <div className="">
+    {/* <NavBar /> */}
+    </div>
       <aside className="h-screen">
         <nav className="h-full flex flex-col bg-white border-r shadow-sm">
           <div className="p-4 pb-2 flex justify-between items-center">
