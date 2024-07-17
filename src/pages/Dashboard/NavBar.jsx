@@ -43,7 +43,7 @@ const NavBar = () => {
             </a>
             <a
               href="/signup"
-              className="bg-blue-600 text-white font-[700] hover:bg-yellow-600 px-4 py-2 rounded-lg"
+              className="bg-indigo-800 text-white font-[700] hover:bg-yellow-600 px-4 py-2 rounded-lg"
             >
               SIGN UP
             </a>
