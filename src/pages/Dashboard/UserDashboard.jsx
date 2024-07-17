@@ -38,7 +38,6 @@ function UserDashboard() {
         </SideBar>
         <main className="flex-1 p-4">
           {" "}
-          {/* Your main content goes here */}{" "}
         </main>
       </div>
     </div>
