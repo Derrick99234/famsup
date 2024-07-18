@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import LoadingScreen from "../components/Preloader/LoadingScreen";
 import AdminSignIn from "../pages/Admin/Signin";
@@ -8,6 +8,7 @@ import Home from "../pages/Home/Home";
 import SignUp from "../pages/Join/Signup";
 import SignIn from "../pages/Join/Signin";
 import UserDashboard from "../pages/Dashboard/UserDashboard";
+import About from "../pages/About/About";
 
 const FolderRoute = () => {
   const [loading, setLoading] = useState(false);
@@ -20,7 +21,7 @@ const FolderRoute = () => {
     handleStart();
     setTimeout(() => {
       handleComplete();
-    }, 1000); 
+    }, 1000);
 
     return () => handleComplete();
   }, [location]);
@@ -30,6 +31,7 @@ const FolderRoute = () => {
       {loading && <LoadingScreen />}
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/about" element={<About />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/adminsignin" element={<AdminSignIn />} />
         <Route path="/admindashboard" element={<Dashboard />} />
