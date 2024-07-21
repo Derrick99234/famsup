@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "../Dashboard/NavBar";
 import SideBar, { SidebarItem } from "../Dashboard/SideBar";
 import {
   LifeBuoy,
@@ -15,7 +14,6 @@ import {
 function UserDashboard() {
   return (
     <div className="flex flex-col h-screen">
-      <NavBar />
       <div className="flex flex-1">
         <SideBar>
           <SidebarItem
