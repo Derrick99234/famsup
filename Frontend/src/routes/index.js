@@ -8,6 +8,7 @@ import Home from "../pages/Home/Home";
 import SignUp from "../pages/Join/Signup";
 import SignIn from "../pages/Join/Signin";
 import UserDashboard from "../pages/Dashboard/UserDashboard";
+import About from "../pages/About/About";
 
 const FolderRoute = () => {
   const [loading, setLoading] = useState(false);
@@ -30,6 +31,7 @@ const FolderRoute = () => {
       {loading && <LoadingScreen />}
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/about" element={<About />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/adminsignin" element={<AdminSignIn />} />
         <Route path="/admindashboard" element={<Dashboard />} />
